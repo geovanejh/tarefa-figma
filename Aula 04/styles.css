@@ -2,6 +2,12 @@
 
 * {
     font-family: Montserrat;
+    margin: 0px;
+    padding: 0px;
+}
+
+li{ 
+    list-style: none;
 }
 
 .container {
@@ -30,6 +36,7 @@
     margin-right: 70px;
 }
 
+
 .nav a {
     margin-right: 40px;
     font-family: Comfortaa;
@@ -38,15 +45,22 @@
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 10vh;
 }
 
-header nav ul {
-    display: flex;
+footer {
+    width: 100%;
 }
 
-header nav ul li {
+header nav ul, footer nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0;
+}
+
+header nav ul li, footer nav ul li {
     font-weight: 700;
 }
 
@@ -55,12 +69,14 @@ header nav ul li {
 }
 
 .primary-button {
- background-color: #FFFFFF;
- border: 1px solid #18A0FB;
- border-radius: 6px;
- padding: 11px 42px;
- color: #18A0FB;
- font-weight: 900;
+    background-color: #FFFFFF;
+    border: 1px solid #18A0FB;
+    border-radius: 6px;
+    padding: 11px 42px;
+    color: #18A0FB;
+    font-weight: 900;
+    min-width: 160px;
+    margin: 15px;
 }
 
 .primary-button:hover {
@@ -75,6 +91,8 @@ header nav ul li {
     padding: 11px 42px;
     color: #FFFFFF;
     font-weight: 700;
+    min-width: 160px;
+    margin: 15px;
 }
 
 .secondary-button:hover {
@@ -87,7 +105,7 @@ header nav ul li {
     justify-content: center;
     align-items: center;
     background-color: #E5E5E5;
-    width: 100vw;
+    width: 100%;
     height: 960px;
 }
 
@@ -114,3 +132,54 @@ header nav ul li {
     width: 192px;
 }
 
+.newsletters {
+    background-color: #e5e5e5;
+}
+
+.news-bar {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.direction-collumn {
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.ul-icons {
+    width: 300px;
+    padding: 0;
+    justify-content: space-between;
+    margin: auto;
+}
+
+footer nav {
+    width: 100%;
+}
+
+hr{
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+footer {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+p.text {
+    font-size: 20px;
+}
+
+footer span {
+    margin-top: 15px;
+}
