@@ -1,4 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.menu-hamburger {
+    display: none;
+}
+
+.menu-hamburger:hover {
+    cursor: pointer;
+}
 
 html, * {
     font-family: Montserrat;
@@ -14,7 +27,7 @@ a {
 
 h3 {
     font-size:24px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
@@ -26,12 +39,7 @@ h2 {
 p {
     font-size: 18px;
     line-height: 26px;
-}
-
-
-.container {
-    max-width: 1200px;
-    margin: auto;
+    font-weight: 400;
 }
 
 .nav-bar {
@@ -50,6 +58,7 @@ p {
     font-family: Montserrat;
     font-size: 15px;
     color: #18A0FB;
+    font-weight: 500;
 }
 
 .logo img {
@@ -62,6 +71,7 @@ p {
     margin-right: 40px;
     font-family: Comfortaa;
     font-size: 28.4444px;
+    font-weight: 400;
 }
 
 header {
@@ -88,12 +98,13 @@ header nav ul li {
  border-radius: 6px;
  padding: 11px 42px;
  color: #18A0FB;
- font-weight: 900;
+ font-weight: 500;
 }
 
 .primary-button:hover {
     background-color: #18A0FB;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .secondary-button {
@@ -102,12 +113,13 @@ header nav ul li {
     border-radius: 6px;
     padding: 11px 42px;
     color: #FFFFFF;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .secondary-button:hover {
     background-color: #FFFFFF;
     color: #18A0FB;
+    cursor: pointer;
 }
 
 .video {
@@ -116,7 +128,6 @@ header nav ul li {
     background: url('https://i.pinimg.com/originals/fb/be/28/fbbe282e940039a76cb2d4216de7a914.png');
     background-repeat: no-repeat;
     background-size: cover;
-    
     height: 92vh;
 }
 
@@ -135,11 +146,17 @@ header nav ul li {
     margin-bottom: 66px;
 }
 
+.video-components i:hover {
+    cursor: pointer;
+}
+
 .video-components h1 {
+    text-align: center;
     font-size: 48px;
     margin: 123px 0;
     position: absolute;
     margin-top: 375px;
+    font-weight: 400;
 }
 
 .video-components input {
@@ -168,20 +185,23 @@ header nav ul li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 30px 0 60px 0;
+}
+
+.text-contents h3 {
+    margin-top: 60px;
 }
 
 .text-contents p {
-    margin-bottom: 28px;
+    margin-bottom: 24px;
 }
 
 .text-contents div {
     width: 550px;
-    margin-bottom: 60px;
 }
 
 .image-section {
-    padding: 60px 0;
+    padding: 60px 0 60px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -220,7 +240,7 @@ header nav ul li {
 .cards img {
     width: 173px;
     height: 76px;
-    padding: 32px 42px;
+    padding: 24px 38px;
 }
 
 .contact-section {
@@ -234,7 +254,7 @@ header nav ul li {
 }
 
 .contact-buttons {
-    width: 60%;
+    width: 65%;
     margin-right: 10px;
     display: flex;
     align-items: center;
@@ -282,14 +302,117 @@ header nav ul li {
     font-size: 34px;
 }
 
+.footer-icons:hover {
+    cursor: pointer;
+}
+
 small {
     display: flex;
     justify-content: center;
-    font-size: 15px;
-    font-weight: 100;
+    font-size: 14px;
+    font-weight: 400;
     margin-bottom: 100px;
 }
 
+@media(max-width: 1200px) {
+    .container {
+        max-width: 990px;
+    }
 
+    .login-buttons button{
+        display: inline;
+    }
 
+    .menu-hamburger {
+        display: none;
+    }
 
+    .text-contents {
+        display: flex;  
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .text-contents div {
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 992px){
+    .container {
+        max-width: 768px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    .footer-nav ul {
+        justify-content: space-between;
+        width: 400px;
+    }
+
+    .footer-nav nav:first-child li{
+        margin: 0 0 30px 0;
+    }
+
+    .footer-nav nav:last-child li {
+        margin: 30px 0 0 0;
+    }
+
+     .login-buttons button{
+        display: none;
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+
+    .image-section {
+        flex-direction: column;
+    }
+
+    .image-section img {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .image-text, .reversed-image-text {
+        margin: 0;
+    }
+
+    .reversed-image-section {
+        flex-direction: column-reverse;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        max-width: 576px;
+    }
+
+    .cards-section {
+        padding: 100px 0 225px 0;
+    }
+
+    .contact-content {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-buttons {
+        width: 100%;
+    }
+
+    .contact-content h2 {
+        padding-bottom: 30px;
+    }
+
+    header nav {
+        display: none;
+    }
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style-mobile.css" media="(max-width: 576px)">
 </head>
 <body>
     <header>
@@ -28,21 +29,24 @@
             <div class="login-buttons">
                 <button class="primary-button">Log in</button>
                 <button class="secondary-button">Register</button>
+                <i class="fa-solid fa-bars menu-hamburger"></i> 
             </div>
         </div>
     </header>
     <main>
         <section class="video">
-            <div class="video-components">
-                <i class="fa-solid fa-circle-play"></i>
-                <h1>The largest community of photo enthusiasts</h1>
-                <input type="button" value="Join Today" class="secondary-button">
+            <div class="container">
+                <div class="video-components">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <h1>The largest community of photo enthusiasts</h1>
+                    <input type="button" value="Join Today" class="secondary-button">
+                </div>
             </div>
         </section>
         <section>
             <div class="container text-container">
                 <div class="title-text">
-                    <h1>Snap photos and share like never before</h1>
+                    <h1 class="title-h1">Snap photos and share like never before</h1>
                     <span></span>
                 </div>  
                 <div class="text-contents">
@@ -79,7 +83,7 @@
             </div>
         </section>
         <section class="reversed-image-section">
-            <div class="container image-section">
+            <div class="container image-section reversed-image-section">
                 <div class="reversed-image-text">
                     <h3>Lorem ipsum dolor sit.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam enim voluptates quae dolore explicabo veritatis accusamus, dolores mollitia hic!</p>
