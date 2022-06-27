@@ -125,7 +125,7 @@ header nav ul li {
 .video {
     display: flex;
     justify-content: center;
-    background: url('https://i.pinimg.com/originals/fb/be/28/fbbe282e940039a76cb2d4216de7a914.png');
+    background: url('./images/img1.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 92vh;
